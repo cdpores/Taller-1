@@ -107,5 +107,3 @@ switch (resp) {
         console.log('El valor ingresado no es valido')
     break;
 }
-
-//
