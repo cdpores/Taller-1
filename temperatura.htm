@@ -46,23 +46,35 @@
                 
 
                 <div class="form-box">
-                    <h1>Calculadora</h1>
+                    <h1>Temperatura</h1>
                     
-                    <form action="">
-                        <label for="" id="label">Ingresa un número</label>
-                        <input type="number" id="num1">
-                        <label for="" id="label">Ingresa otro número</label>
-                        <input type="number" id="num2">
-                        <label for="" id="label">Seleccione una operación</label>
-                        <select name="" id="operation">
-                            <option selected>Seleccione una operación</option>
-                            <option value="1">Suma</option>
-                            <option value="2">Resta</option>
-                            <option value="3">Multiplicacion</option>
-                            <option value="4">Division</option>
-                        </select>
+                    <form action="" id="form">
+
+                        <label for="palabra" id="label">Ingresa el valor de la temperatura</label>
+
+                        <div class="input"> 
+                            <input type="number" id="palabra">
+                        </div>
+                        
+                        
+                        <div class="opcion">
+                            <select name="metodos" id="grados">
+                                <option selected>De grados</option>
+                                <option value="1">Celcius</option>
+                                <option value="2">Kelvin</option>
+                                <option value="3">Farenheith</option>
+                            </select>
+
+                            <select name="metodos" id="medididas">
+                                <option selected></option>
+                                <option value="1">A grados</option>
+                                <option value="2">Conviertelo a mayuscula</option>
+                                <option value="3">Conviertelo en minuscula</option>
+                            </select>
+                        </div>
+                        
                 
-                        <button type="submit" onclick="calcular()" id="btn">Calcular</button>
+                        <button type="submit" onclick="conversion()" id="btn">Enviar</button>
                     </form>
                 </div>
 
@@ -71,6 +83,6 @@
     </div>
     
 
-    <script src="js/calculadora.js"></script>
+    <script src="js/temperatura.js"></script>
 </body>
 </html>
