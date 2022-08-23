@@ -4,25 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
     <title>Calculadora</title>
 </head>
 <body>
-    <form action="">
-        <label for="">Ingresa un número</label>
-        <input type="number" id="num1">
-        <label for="">Ingresa otro número</label>
-        <input type="number" id="num2">
-        <label for="">Seleccione una operación</label>
-        <select name="" id="operation">
-            <option selected>Seleccione una operación</option>
-            <option value="1">Suma</option>
-            <option value="2">Resta</option>
-            <option value="3">Multiplicacion</option>
-            <option value="4">Division</option>
-        </select>
+    <div class="encabezado">
+        <div class="logo">
+            <img src="img/logo-js.jpg" alt="">
+        </div>
+        <div class="title-head">
+            <h1>JavaScript</h1>
+        </div>
+    </div>
 
-        <button type="submit" onclick="calcular()">Calcular</button>
-    </form>
+    <div class="container">
+
+        <nav>
+            <div class="title-menu">
+                <h2 id="title">Menu</h2>
+            </div>
+    
+            <div class="menu">
+                <a href="ejercio1.html">Ejercicio 1</a>
+                <a href="prueba.html">Ejercicio 2</a>
+                <a href="index.html">Ejercicio 3</a>
+                <a href="alcancia.html">Ejercicio 4</a>
+                <a href="ejercicio5.html">Ejercicio 5</a>
+                <a href="ejercicio6.html">Ejercicio 6</a>
+                <a href="carisellazo.html">Ejercicio 7</a>
+                <a href="funciones.html">Ejercicio 8</a>
+                <a href="calculadora.html">Ejercicio 9</a>
+                <a href="Dahsboard.html">Inicio</a>
+            </div>
+        </nav>
+
+        <section id="contenido">
+
+            <section id="box">
+
+                
+
+                <div class="form-box">
+                    <h1>Calculadora</h1>
+                    
+                    <form action="">
+                        <label for="" id="label">Ingresa un número</label>
+                        <input type="number" id="num1">
+                        <label for="" id="label">Ingresa otro número</label>
+                        <input type="number" id="num2">
+                        <label for="" id="label">Seleccione una operación</label>
+                        <select name="" id="operation">
+                            <option selected>Seleccione una operación</option>
+                            <option value="1">Suma</option>
+                            <option value="2">Resta</option>
+                            <option value="3">Multiplicacion</option>
+                            <option value="4">Division</option>
+                        </select>
+                
+                        <button type="submit" onclick="calcular()" id="btn">Calcular</button>
+                    </form>
+                </div>
+
+            </section>
+        </section>
+    </div>
+    
 
     <script src="js/calculadora.js"></script>
 </body>

@@ -45,20 +45,20 @@ while (seguir==true) {
     let lanzamiento=lanzar();
     if (lanzamiento==1 && eleccion==1) {
         saldo=ganar(saldo,apuesta)
-        console.log(`El lanzamiento fue cara esogiste cara tu ganas!!!, tu nuevo saldo es  ${saldo}`)
+        alert(`El lanzamiento fue cara esogiste cara tu ganas!!!, tu nuevo saldo es  ${saldo}`)
         
     } else if (lanzamiento==2 && eleccion==2){
         saldo=ganar(saldo,apuesta)
-        console.log(`El lanzamiento fue sello esogiste sello tu ganas!!!, tu nuevo saldo es  ${saldo}`)
+        alert(`El lanzamiento fue sello esogiste sello tu ganas!!!, tu nuevo saldo es  ${saldo}`)
 
     }else if (lanzamiento==1 && eleccion==2){
         saldo=perder(saldo,apuesta)
-        console.log(`El lanzamiento fue cara esogiste sello tu perdiste!!!, tu nuevo saldo es  ${saldo}`)
+        alert(`El lanzamiento fue cara esogiste sello tu perdiste!!!, tu nuevo saldo es  ${saldo}`)
         
 
     }else if (lanzamiento==2 && eleccion==1){
         saldo=perder(saldo,apuesta)
-        console.log(`El lanzamiento fue sello esogiste cara tu perdiste!!!, tu nuevo saldo es  ${saldo}`)
+        alert(`El lanzamiento fue sello esogiste cara tu perdiste!!!, tu nuevo saldo es  ${saldo}`)
         
 
     }

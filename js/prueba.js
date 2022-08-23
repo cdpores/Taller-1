@@ -1,5 +1,5 @@
 for (i=0; i<5;i++){
-    console.log("Hola cristian");
+    alert("Hola cristian");
 }
 
 let repetir
@@ -7,7 +7,7 @@ let repetir
 while (repetir==1) {
 
 
-    console.log("Hola cristian");
+    alert("Hola cristian");
     repetir=window.prompt('Desea continuar?; de ser asi digite 1, de lo contrario digite 2')
     
 }

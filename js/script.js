@@ -79,31 +79,31 @@ let resp=window.prompt('A su disposicion existen ocho operaciones que desarrolla
 switch (resp) {
     case 's':
     case 'S':
-        console.log(`El resultado de la suma es ${parseFloat(n1)+parseFloat(n2)}`)
+       alert(`El resultado de la suma es ${parseFloat(n1)+parseFloat(n2)}`)
         
     break;
     
     case 'r':
     case 'R':
-        console.log(`El resultado de la resta es ${parseFloat(n1)-parseFloat(n2)}`)
+       alert(`El resultado de la resta es ${parseFloat(n1)-parseFloat(n2)}`)
     break;
     case 'm':
     case 'M':
-        console.log(`El resultado de la multiplicacion es ${parseFloat(n1)*parseFloat(n2)}`)
+       alert(`El resultado de la multiplicacion es ${parseFloat(n1)*parseFloat(n2)}`)
     break;
     case 'd':
     case 'D':
-        console.log(`El resultado de la division es ${parseFloat(n1)/parseFloat(n2)}`);
+       alert(`El resultado de la division es ${parseFloat(n1)/parseFloat(n2)}`);
     break;
     case 'p':
     case 'P':
-        console.log(`El resultado de la potenciacion entre ${n1}^${n2} es ${Math.pow(n1,n2)}`)
+       alert(`El resultado de la potenciacion entre ${n1}^${n2} es ${Math.pow(n1,n2)}`)
     break;
     case 're':
     case 'RE':
-        console.log(`El resultado de la raiz es ${Math.sqrt(n1).toFixed(2)}`)
+       alert(`El resultado de la raiz es ${Math.sqrt(n1).toFixed(2)}`)
     break;
     default:
-        console.log('El valor ingresado no es valido')
+       alert('El valor ingresado no es valido')
     break;
 }

@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+  --amarillo: rgb(243, 233, 88);
+  --blanco: rgb(255, 255, 255);
+  --azul: rgb(28, 47, 133);
+  --gris: rgb(117, 117, 117);  
+  --negro: rgb(0, 0, 0); 
+  --gris2: rgb(238, 238, 238); 
+}
+ 
+*{
+    margin:0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: var(--gris2);
+}
+ 
+  h1,h2,h3,h4,h5{
+    font-family: 'Marcellus', serif;
+}
+
+
+.encabezado{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--negro);
+    margin-bottom: 0.5rem;
+    
+
+}
+
+.logo img{
+    width: 20%;
+    margin: 0.5rem 2rem;
+}
+
+.title-head h1{
+    margin: 0.5rem 2rem;
+    color: var(--blanco);
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    text-align: center;
+    background-color: var(--azul);
+    border: solid 5px var(--negro);
+    margin-left: 0.5rem;
+}
+
+nav a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    margin: 1rem 2rem;
+    color: var(--blanco);
+    font-size: 1.2rem;
+}
+
+nav h2{
+    margin-bottom: 2rem;
+    background-color: var(--amarillo);
+    padding: 0.5rem;
+}
+
+#contenido{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+nav a:hover{
+    background-color: var(--gris);
+    margin: 0;
+    padding: 1rem;
+}
+
+#box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5%;
+    width: 100%;
+    
+}
+
+.form-box h1{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.form-box form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--amarillo);
+    border: solid 2px var(--gris);
+    border-radius: 5px;
+    padding: 2rem;
+}
+
+#num1, #num2{
+    width: 500px;
+    height: 25px;
+    margin: 1rem;
+    border: solid 2px var(--gris);
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+
+#operation{
+    width: 500px;
+    height: 35px;
+    margin: 1rem;
+    border: solid 2px var(--gris);
+    text-align: center;
+    font-size: 1rem;
+    
+}
+
+#btn{
+    padding: 0.5rem;
+    color: var(--blanco);
+    background-color: var(--negro);
+    border: solid 2px var(--negro);
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 40%;
+
+}
