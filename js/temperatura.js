@@ -1,11 +1,14 @@
 function palabras(){
 
-    let palabra=document.getElementById('palabra').value
-    let op=parseInt(document.getElementById('metodos').value)
+    let vtem=parseInt(document.getElementById('val-tem').value)
+    let temp=parseInt(document.getElementById('grados').value)
+    let conver=parseInt(document.getElementById('medidas').value)
 
-    if (op==1) {
+    if (temp==1 && conver==2) {
 
-        alert(`tiene una longitud de ${palabra.length} caracteres`)
+        let res=vtem+273.15
+
+        alert(`El resultado de la conversion es que ${vtem} gardos celcius, equivalen a ${res} grados kelvin`)
         
     } else if (op==2) {
  
@@ -20,3 +23,4 @@ function palabras(){
         alert(palabra.charAt(0))
         
     }
+}
