@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b262621bfc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos2.css">
+    <title>Figuras</title>
+</head>
+<body>
+    <div class="encabezado">
+        <div class="logo">
+            <img src="img/logo-js.jpg" alt="">
+        </div>
+        <div class="title-head">
+            <h1>JavaScript</h1>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <nav>
+            <div class="title-menu">
+                <h2 id="title">Menu</h2>
+            </div>
+    
+            <div class="menu">
+                <a href="calculadora.html">Ejercicio 0</a>
+                <h2>Ejercios Consosla</h2>
+                <a href="ejercio1.html">Nombre</a>
+                <a href="prueba.html">While</a>
+                <a href="index.html">Switch</a>
+                <a href="alcancia.html">Alcancia</a>
+                <a href="ejercicio5.html">Array</a>
+                <a href="ejercicio6.html">Dom</a>
+                <a href="carisellazo.html">Caricellazo (if)</a>
+                <a href="funciones.html">Carizellazo (function)</a>
+                <a href="Dahsboard.html">Inicio</a>
+            </div>
+        </nav>
+
+        <section id="contenido">
+
+                <div class="figuras">
+                    <div class="circulo">
+                        <div class="ico">
+                            <i class="fa-solid fa-circle"></i>
+                        </div>
+                        <button id="abrirP">Calcular Perimetro</button>
+                        <button id="abrirA">Calcular Area</button>
+            
+                        <div id="calPerimetroC" class="cal">
+            
+                            <div class="contenidoF">
+                                <span id="cerrarP"><i class="fa-solid fa-xmark"></i></span>
+            
+                            <h2>Calcular Perimetro</h2>
+                            <form action="">
+                                <label for="">Radio:</label>
+                                <input type="number" id="radio1" placeholder="digite el radio del circulo [cm]">
+            
+                                <div id="resultado">
+                
+                                </div>
+            
+                                <button id="btnP">Calcular</button>
+                            </form>
+                            </div>
+                            
+                        </div>
+                        <div id="calAreaC" class="cal">
+            
+                            <div class="contenidoF">
+                                <span id="cerrarA"><i class="fa-solid fa-xmark"></i></span>
+            
+                                <h2>Calcular Area</h2>
+                                <form action="">
+                                <label for="">Radio:</label>
+                                <input type="text" id="radio2" placeholder="digite el radio del circulo [cm]">
+            
+                                <div id="resultado2">
+                
+                                </div>
+            
+                                <button id="btnA">Calcular</button>
+                                </form>
+            
+                            </div>
+            
+                        </div>
+                    </div>
+            
+                    <div class="cuadrado">
+                        <div class="ico">
+                            <i class="fa-solid fa-square"></i>
+                        </div>
+                        <button id="abrirPc">Calcular Perimetro</button>
+                        <button id="abrirAc">Calcular Area</button>
+            
+                        <div id="calPerimetroCu" class="cal">
+                            
+                            <div class="contenidoF">
+                                <span id="cerrarPc"><i class="fa-solid fa-xmark"></i></span>
+            
+                            <h2>Calcular Perimetro</h2>
+                            <form action="">
+                                <label for="">lado:</label>
+                                <input type="text" id="lado1" placeholder="digita el valor del lado [cm]">
+                                <div id="resultado3">
+                
+                                </div>
+            
+                                <button id="btnPc">Calcular</button>
+                            </form>
+                            </div>
+                            
+                        </div>
+                        <div id="calAreaCu" class="cal">
+            
+                            <div class="contenidoF">
+                                <span id="cerrarAc"><i class="fa-solid fa-xmark"></i></span>
+            
+                            <h2>Calcular Area</h2>
+                            <form action="">
+                                <label for="">lado:</label>
+                                <input type="text" id="lado2" placeholder="digita el valor del lado [cm]">
+                                <div id="resultado4">
+                
+                                </div>
+            
+                                <button id="btnAc">Calcular</button>
+                            </form>
+                            </div>
+                            
+                        </div>
+                    </div>
+            
+                    <div class="rectangulo">
+                        <div class="ico">
+                            <i class="fa-solid fa-rectangle-ad"></i>
+                        </div>
+                        <button id="abrirPr">Calcular Perimetro</button>
+                        <button id="abrirAr">Calcular Area</button>
+            
+                        <div id="calPerimetroR" class="cal">
+            
+                            <div class="contenidoF">
+                                <span id="cerrarPr"><i class="fa-solid fa-xmark"></i></span>
+            
+                            <h2>Calcular Perimetro</h2>
+                            <form action="">
+                                <label for="">Ancho:</label>
+                                <input type="text" id="ancho" placeholder="digita el valor del ancho [cm]">
+            
+                                <label for="">Alto:</label>
+                                <input type="text" id="alto" placeholder="digita el valor del alto [cm]">
+            
+                                <div id="resultado5">
+                
+                                </div>
+            
+                                <button type="submit" id="btnPr">Calcular</button>
+                            </form>
+                            </div>
+                            
+                        </div>
+                        <div id="calAreaR" class="cal">
+            
+                            <div class="contenidoF">
+                                <span id="cerrarAr"><i class="fa-solid fa-xmark"></i></span>
+            
+                            <h2>Calcular Area</h2>
+                            <form action="">
+                                <label for="">Ancho:</label>
+                                <input type="text" id="ancho2" placeholder="digita el valor del ancho [cm]">
+            
+                                <label for="">Alto:</label>
+                                <input type="text" id="alto2" placeholder="digita el valor del alto [cm]">
+            
+                                <div id="resultado6">
+                
+                                </div>
+            
+                                <button type="submit" id="btnAr">Calcular</button>
+                            </form>
+                            </div>
+                            
+                        </div>
+                    </div>
+            
+                    <div class="triangulo">
+                        <div class="ico">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                        </div>
+                        <button id="abrirPt">Calcular Perimetro</button>
+                        <button id="abrirAt">Calcular Area</button>
+            
+                        <div id="calPerimetroT" class="cal">
+            
+                            <div class="contenidoF">
+                                <span id="cerrarPt"><i class="fa-solid fa-xmark"></i></span>
+            
+                            <h2>Calcular Perimetro</h2>
+                            <form action="">
+                                <label for="">base:</label>
+                                <input type="text" id="base" placeholder="digita el valor de la base [cm]">
+            
+                                <label for="">altura:</label>
+                                <input type="text" id="altura" placeholder="digita el valor de la altura [cm]">
+            
+                                <div id="resultado7">
+                
+                                </div>
+            
+                                <button type="submit" id="btnPt">Calcular</button>
+                            </form>
+                            </div>
+                            
+                        </div>
+                        <div id="calAreaT" class="cal">
+            
+                            <div class="contenidoF">
+                                <span id="cerrarAt"><i class="fa-solid fa-xmark"></i></span>
+            
+                            <h2>Calcular Area</h2>
+                            <form action="">
+                                <label for="">base:</label>
+                                <input type="text" id="base2" placeholder="digita el valor del base [cm]">
+            
+                                <label for="">altura:</label>
+                                <input type="text" id="altura2" placeholder="digita el valor del altura [cm]">
+            
+                                <div id="resultado8">
+                
+                                </div>
+            
+                                <button type="submit" id="btnAt">Calcular</button>
+                            </form>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+        </section>
+    </div>
+    
+
+    <script src="js/figuras.js"></script>
+</body>
+</html>
