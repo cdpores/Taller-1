@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/6131ecdde6.js"></script>
+   <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">  -->
+
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Validación de formulario</title>
+</head>
+<body>
+    <div class="frm-container">
+        <h1>Registro de Usuario</h1>
+        <form id="frm-usuario" action="#" method="POST">
+            <div class="form-group" id="g-tipodoc">
+                <label for="tipodoc">Tipo Documento</label>
+                <div class="form-group-input">
+                    <select name="tipodoc" id="tipodoc" class="frm-input">
+                        <option value="g">Seleccione un tipo de documento</option>
+                        <option value="1">Cedula de ciudadania</option>
+                        <option value="2">Cedula de extranjeria</option>
+                    </select>
+                    <span class="msn-error">seleccione un tipo de documento</span>
+                </div>
+            </div>
+            <div class="from-group" id="g-numdoc">
+                <label for="numdoc">Numero de Documento</label>
+                <div class="from-group-input">
+                    <input type="number" name="numdoc" id="numdoc" class="frm-input">
+                    <i class="fa-solid fa-circle-check frm-icono"></i>
+                    <span class="msn-error">Solo se puede ingresar numeros,minimo 7</span>
+                </div>
+
+            </div>
+
+            <div class="from-group" id="g-nombre">
+                <label for="nombre">Nombre</label>
+                <div class="from-group-input">
+                    <input type="text" name="nombre" id="nombre" class="frm-input">
+                    <i class="fa-solid fa-circle-check frm-icono"></i>
+                    <span class="msn-error">Solo se puede ingresar letras, maximo 40 caracteres</span>
+                </div>
+            </div>
+
+            <div class="from-group" id="g-apellido">
+                <label for="apellido">Apellido</label>
+                <div class="from-group-input">
+                    <input type="text" name="apellido" id="apellido" class="frm-input">
+                    <i class="fa-solid fa-circle-check frm-icono"></i>
+                    <span class="msn-error">Solo se puede ingresar letras, maximo 40 caracteres</span>
+                </div>
+            </div>
+
+            <div class="from-group" id="g-correo">
+                <label for="correo">Correo</label>
+                <div class="from-group-input">
+                    <input type="email" name="correo" id="correo" class="frm-input">
+                    <i class="fa-solid fa-circle-check frm-icono"></i>
+                    <span class="msn-error">El formato de correo debe ser: usuario@dominio.com</span>
+                </div>
+            </div>
+
+            <div class="from-group" id="g-password">
+                <label for="password">Password</label>
+                <div class="from-group-input">
+                    <input type="email" name="password" id="password" class="frm-input">
+                    <i class="fa-solid fa-circle-check frm-icono"></i>
+                    <span class="msn-error">Tu password debe incluir 8 caracteres, 1 mayuscula, 1 minuscula, 1 numero y 1 caracter especial</span>
+                </div>
+            </div>
+
+            <div class="from-group" id="g-password2">
+                <label for="password2">Confirmar password</label>
+                <div class="from-group-input">
+                    <input type="email" name="password2" id="password2" class="frm-input">
+                    <i class="fa-solid fa-circle-check frm-icono"></i>
+                    <span class="msn-error">La confirmacion de contrseña no coincide</span>
+                </div>
+            </div>
+
+            <div class="from-group" id="g-terminos">
+                <div class="from-group-input">
+                    <input type="checkbox" name="terminos" id="terminos" class="frm-checkbox">
+                    <label for="terminos">Acepta terminos de uso</label>
+                </div>
+            </div>
+
+            <button type="submit" id="btn-enviar">Registrar</button>
+        </form>
+    </div>
+    
+<script src="js/formulario.js"></script>
+</body>
+</html>
