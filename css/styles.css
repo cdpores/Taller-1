@@ -1,10 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Itim&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@@ -0,0 +1,102 @@
 
-.tittle{
-    text-align: center;
-    color: rgb(0, 0, 0);
-    font-size: 50px;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 *{
     margin: 0;
@@ -14,92 +10,75 @@
 }
 
 body{
-    background-color: rgba(250, 245, 231, 0.447);
+    background: rgb(193, 217, 244);
     font-family: 'Roboto', sans-serif;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1, h2, h3, h4{
     font-family: 'Itim', cursive;
-    color: rgb(0, 0, 0);
+    color: rgb(243, 233, 88);
 }
 
 /*Estilos del formulario*/
-
-.tittleform{
-    text-align: center;
+.frm-container{
+    background: #000;
+    max-width: 40rem;
+    width: 100%;
+    color: #ffff;
+    padding: 2rem;
+    margin: 50px auto;
 }
-
-.form-container{
-  background-color: rgba(0, 0, 0, 0.537);
-  max-width: 40rem;
-  width: 100%;
-  color: antiquewhite;
-  padding: 3rem;
-  margin: 50px auto;
-}
-
 .frm-input{
     width: 100%;
     min-height: 2.5rem;
     padding-left: 1rem;
-    padding: 0 1rem;
-    box-shadow: 4px 4px 3px rgb(0, 0, 0);
-    margin-top: 1rem;
+    box-shadow: 4px;
 }
 
 .frm-input:focus{
     outline: none;
-    border-color: rgb(0, 0, 0);
-    border-width: 2px;
+    color: rgb(5, 109, 200);
+    border-width: 3px;
     border-style: solid;
+
 }
 
-.terminos{
+#g-terminos{
     display: flex;
     justify-content: center;
 }
 
-.terminos label{
-padding: 5px  10px;
+.frm-checkbox{
+    margin: 1rem;
 }
 
-.terminos input{
-    cursor: pointer;
-}
-
-.btn-enviar{
-    background-color: red;
+#btn-enviar{
+    background: linear-gradient(rgb(243, 233, 88), aqua);
     padding: 0.5rem 1rem;
-    border-radius: 5px ;
+    border-radius: 5px;
     font-weight: bold;
     width: 100%;
-    cursor: pointer;
 }
 
-.btn-enviar:hover{
-    background-color: red;
+#btn-enviar:hover{
+    background: linear-gradient(#fff, aqua);;
 }
 
 .msn-error{
-    font-size: 12px;
-    color: rgb(0, 0, 0);
+    font-size: 11px;
+    color: red;
     visibility: hidden;
-    opacity: 0;
 }
 
 .form-group{
-    margin: 0.5rem 0;
-}
-
-.form-group label{
-    color: rgb(0, 0, 0);
+    margin: 0.5rem 0rem;
 }
 
 label{
-    font-weight: 600;
+    font-weight: 500;
 }
 
-.form-group-input{
+.from-group-input{
     position: relative;
 }
 
@@ -107,12 +86,10 @@ label{
     position: absolute;
     right: 1rem;
     bottom: 2rem;
-    color: red;
-    z-index: 100;
+    color: aquamarine;
 }
-
 .success .frm-icono{
-    color: green;
+    color: greenyellow;
 }
 
 .error .frm-icono{
@@ -122,4 +99,5 @@ label{
 .msn-error-visible{
     visibility: visible;
     opacity: 1;
+
 }

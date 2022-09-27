@@ -8,7 +8,7 @@ const reglas={
     textos:/^[a-zA-ZÁ-ÿ\s]{1,40}/,
     numeros:/^\d{7,10}$/,
     correo:/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-    password:/^(?=.^\d)(?=.*[#$%@])(?=.*[a-z])(?=.*[A-Z]).{8}$/
+    password: /^(?=.+\d)(?=.[#$%&!@])(?=.[a-z])(?=.*[A-Z]).{8,}$/
 }
 
 const input={
