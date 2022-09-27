@@ -47,6 +47,56 @@ const ValidarInput=(regla, input, grupo)=>{
 
 }
 
+/*Validar Password*/
+const validarPassword = () => {
+    const pass1 = document.getElementById('password');
+    const pass2 = document.getElementById('password2');
+
+    if (pass1.value === pass2.value) {
+        
+        document.getElementById(`g-password2`).classList.add('success');
+        
+        document.querySelector("#g-password2 i").classList.add('fa-circle-check')
+        
+        document.getElementById(`g-password2`).classList.remove('error');
+        
+        document.querySelector("#g-password2 i").classList.remove('fa-circle-exclamation')
+
+        document.querySelector(`#g-password2 .msn-error`).classList.remove('msn-error-visible');
+
+        inputs['password'] = true;
+    } else {
+        document.getElementById('g-password2').classList.add('error');
+
+        document.querySelector("#g-password2 .msn-error").classList.add('msn-error-visible');
+
+        document.querySelector("#g-password2 i").classList.remove('fa-circle-check')
+
+        document.querySelector("#g-password2 i").classList.add('fa-circle-exclamation')
+        inputs['password'] = false;
+    }
+}
+
+
+const ValidarPasssword2=()=>{
+    if (document.getElementById('passwor').value==document.getElementById('password2').value) {
+        document.getElementById(`g-${grupo}`).classList.remove("error")
+        document.getElementById(`g-${grupo}`).classList.add("success")
+        document.querySelector(`#g-${grupo} i`).classList.add("fa-circle-check")
+        document.querySelector(`#g-${grupo} i`).classList.remove("fa-circle-exclamation")
+        document.querySelector(`#g-${grupo} .msn-error`).classList.remove('msn-error-visible')
+    }else{
+        document.getElementById(`g-${grupo}`).classList.add("error")
+        document.getElementById(`g-${grupo}`).classList.remove("success")
+        document.querySelector(`#g-${grupo} i`).classList.remove("fa-circle-check")
+        document.querySelector(`#g-${grupo} i`).classList.add("fa-circle-exclamation")
+        document.querySelector(`#g-${grupo} .msn-error`).classList.add('msn-error-visible')
+        input[grupo]==false;
+        
+    }
+
+}
+
 const ValidarCampos=(e)=>{
     console.log('Se genero un evento sobre el campo '+e.target.name)
 
@@ -69,6 +119,10 @@ const ValidarCampos=(e)=>{
 
         case 'password':
             ValidarInput(reglas.password, e.target, e.target.name)
+        break;
+
+        case 'password2':
+            validarPassword()
         break;
     }
 }
