@@ -62,29 +62,35 @@
 
                         <label for="val-tem" id="label">Ingresa el valor de la temperatura</label>
 
-                        <div class="input"> 
-                            <input type="number" id="val-tem">
-                        </div>
+                       
+                            <input type="number" id="n" class="input">
                         
-                        
+                            <label for="val-tem" id="label">Unidad de medida</label>
                         <div class="opcion">
-                            <select name="metodos" id="grados">
-                                <option selected>De grados</option>
-                                <option value="1">Celcius</option>
-                                <option value="2">Kelvin</option>
-                                <option value="3">Farenheith</option>
-                            </select>
-
-                            <select name="metodos" id="medidas">
-                                <option selected>A grados</option>
-                                <option value="1">Celcius</option>
-                                <option value="2">Kelvin</option>
-                                <option value="3">Farenheith</option>
-                            </select>
+                            <center>
+                                <select name="metodos" id="selector1">
+                                    <option selected>De grados</option>
+                                    <option value="1">Celcius</option>
+                                    <option value="2">Kelvin</option>
+                                    <option value="3">Farenheith</option>
+                                </select>
+                            </center>
+                            
+                            <center><label for="val-tem" id="label">Factor de conversion</label></center>
+                            
+                            <center>
+                                <select name="metodos" id="selector2">
+                                    <option selected>A grados</option>
+                                    <option value="1">Celcius</option>
+                                    <option value="2">Kelvin</option>
+                                    <option value="3">Farenheith</option>
+                                </select>
+                            </center>
+                            
                         </div>
                         
                 
-                        <button type="submit" onclick="conversion()" id="btn">Enviar</button>
+                        <button type="submit" onclick="convertir()" id="btn">Enviar</button>
                     </form>
                 </div>
 

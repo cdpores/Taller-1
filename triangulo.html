@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modal</title>
-    <link rel="stylesheet" href="css/estilos2.css">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/x?s=solid">
+    <title>JavaScript</title>
 </head>
 <body>
         <div class="encabezado">
@@ -36,6 +36,7 @@
                     <a href="temperatura.html">temperatura</a>
                     <a href="prueba.html">Prueba</a>
                     <a href="vrInstructor.html">Verificar instructor</a>
+                    <a href="triangulo.html">triangulo</a>
                     <a href="script.html"></a>
                     <h2>Ejercios Consosla</h2>
                     <a href="ejercio1.html">Nombre</a>
@@ -51,20 +52,31 @@
             </nav>
     
             <section id="contenido">
-                <button id="abrirModal">Lanzar Modal</button>
 
-    <div id="ventanaModal" class="modal">
-        <div class="contenidoModal">
-            <span class="cerrarModal">x</span>
-            <h2>Ventana Modal</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum consequuntur deserunt, fugiat unde obcaecati aut alias, dolore hic, non incidunt quasi et suscipit amet rem nulla reprehenderit deleniti voluptatem totam.</p>
-        </div>
+              <div class="form-box">
+                <h1>Triangulo</h1>
+                <i class="fa-solid fa-square"></i>
 
-    </div>
+                <form class="form-ejercicios">
+                  <div class="group-form">
+                    <input id="lado1" type="text" class="input" placeholder="Digite el primer lado">
+                </div>
+                <div class="group-form">
+                    <input id="lado2" type="text" class="input" placeholder="Digite el segundo lado">
+                </div>
+                <div class="group-form">
+                  <input id="lado3" type="text" class="input" placeholder="Digite el tercer lado">
+                </div>
+              
+                  <button type="submit" id="boton">Enviar</button>
+                </div>
+                </form>
+              </div>
+              
                 
             </section>
         </div>
 
-        <script src="js/modal.js"></script>
+        <script src="js/triangulo.js"></script>
 </body>
 </html>
