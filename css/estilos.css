@@ -161,3 +161,12 @@ nav a:hover{
     text-align: center;
     font-size: 1rem;
 }
+
+#input, #palabra{
+    width: 500px;
+    height: 25px;
+    margin: 1rem;
+    border: solid 2px var(--gris);
+    text-align: center;
+    font-size: 1.5rem; 
+}
